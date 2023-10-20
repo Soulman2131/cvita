@@ -1,0 +1,61 @@
+//
+
+// H2
+.heading-secondary {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  margin-top: 2rem;
+  text-align: center;
+  &__profil {
+    color: $color-white;
+  }
+  &__presentation {
+    color: $color-primary;
+  }
+}
+
+//H3
+.heading-tertiary {
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+//H4
+.heading-quaterny {
+  color: $color-white;
+  font-weight: 300;
+  &__skills {
+    color: $color-greydark;
+    font-weight: 700;
+  }
+  &__education {
+    &--span {
+      font-size: 1rem;
+      color: $color-white;
+    }
+  }
+}
+
+//H5
+.heading-quinary {
+  &__education {
+    color: $color-bluedark;
+    font-weight: 700;
+  }
+  &__experiences {
+    color: $color-bluedark;
+    font-weight: 700;
+    &:first-child {
+      margin-top: 4rem;
+    }
+    &:not(:first-child) {
+      text-transform: uppercase;
+      color: $color-greydark;
+    }
+  }
+}

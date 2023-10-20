@@ -1,0 +1,34 @@
+.footer {
+  &__list {
+    list-style: none;
+    margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  &__item {
+    cursor: pointer;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      display: block;
+      text-decoration: none;
+      font-size: 1.4rem;
+      color: $color-greydark;
+      transition: all 0.2s;
+    }
+    &:hover,
+    &:active {
+      background-color: rgba($color-greydark, 0.05);
+      transform: translateY(-3px);
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $color-bluedark;
+    transform: translateY(3px);
+  }
+}

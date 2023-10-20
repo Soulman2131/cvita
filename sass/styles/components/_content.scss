@@ -1,0 +1,65 @@
+//
+.paragraph {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+// PRESENTATION
+
+// EXPERIENCES
+.experiences {
+  &__box {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    column-gap: 1rem;
+  }
+}
+
+//SKILLS
+.skills {
+  display: grid;
+  row-gap: 1rem;
+  text-transform: uppercase;
+  &__box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(min-content, 12rem) 1fr;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__level {
+    width: 100%;
+    height: 7px;
+    background: #f0f0f0;
+    border-radius: 1rem;
+
+    position: relative;
+    &--width {
+      display: block;
+      background: #03a9f4;
+      height: 100%;
+      border-radius: 1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      &-1 {
+        width: 95%;
+      }
+      &-2 {
+        width: 90%;
+      }
+      &-3 {
+        width: 80%;
+      }
+      &-4 {
+        width: 85%;
+      }
+    }
+  }
+}

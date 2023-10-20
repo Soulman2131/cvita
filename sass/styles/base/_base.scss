@@ -1,0 +1,51 @@
+//COLORS
+$color-primary: #0b4d6b;
+$color-primary-dark: #081921;
+$color-primary-light: #0e5678;
+
+$color-bluelight: lightblue;
+$color-bluedark: #03a9f4;
+
+$color-greydark: #848c90;
+
+$color-white: #fff;
+
+// FONT FAMILY && SHADOW
+$font-primary: "Poppins";
+$shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+
+/*************  MEDIA QUERIES   ***********/
+$bp-largest: 75em; //1200
+$bp-large: 62.5em; //900
+$bp-medium: 50em; //800
+$bp-small: 42.625em; //682
+
+/************************/
+
+* {
+  &,
+  &::before,
+  ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 62.5%;
+
+  //😍😍😍
+  @media screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: $color-bluelight;
+  min-height: 100vh;
+  line-height: 1.6;
+}

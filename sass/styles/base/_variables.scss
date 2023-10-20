@@ -1,0 +1,29 @@
+//Regular
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../assets/fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../assets/fonts/poppins-regular-webfont.woff") format("woff");
+}
+//Light
+@font-face {
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url("../assets/fonts/poppins-light-webfont.woff2") format("woff2"),
+    url("../assets/fonts/poppins-light-webfont.woff") format("woff");
+}
+//BoldItalic
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../assets/fonts/poppins-bolditalic-webfont.woff2") format("woff2"),
+    url("../assets/fonts/poppins-bolditalic-webfont.woff") format("woff");
+}
+//Black
+@font-face {
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../assets/fonts/poppins-black-webfont.woff2") format("woff2"),
+    url("../assets/fonts/poppins-black-webfont.woff") format("woff");
+}

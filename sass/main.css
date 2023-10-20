@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../assets/fonts/poppins-regular-webfont.woff2") format("woff2"), url("../assets/fonts/poppins-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url("../assets/fonts/poppins-light-webfont.woff2") format("woff2"), url("../assets/fonts/poppins-light-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../assets/fonts/poppins-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/poppins-bolditalic-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../assets/fonts/poppins-black-webfont.woff2") format("woff2"), url("../assets/fonts/poppins-black-webfont.woff") format("woff");
+}
+/*************  MEDIA QUERIES   ***********/
+/************************/
+*, *::before,
+* ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: lightblue;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  margin-top: 2rem;
+  text-align: center;
+}
+.heading-secondary__profil {
+  color: #fff;
+}
+.heading-secondary__presentation {
+  color: #0b4d6b;
+}
+
+.heading-tertiary {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.heading-quaterny {
+  color: #fff;
+  font-weight: 300;
+}
+.heading-quaterny__skills {
+  color: #848c90;
+  font-weight: 700;
+}
+.heading-quaterny__education--span {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.heading-quinary__education {
+  color: #03a9f4;
+  font-weight: 700;
+}
+.heading-quinary__experiences {
+  color: #03a9f4;
+  font-weight: 700;
+}
+.heading-quinary__experiences:first-child {
+  margin-top: 4rem;
+}
+.heading-quinary__experiences:not(:first-child) {
+  text-transform: uppercase;
+  color: #848c90;
+}
+
+.container {
+  max-width: 112rem;
+  margin: 5rem auto;
+  width: 100%;
+  min-height: 100rem;
+  background: #fff;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, 2fr);
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.container > * {
+  padding: 2rem 4rem;
+}
+@media screen and (max-width: 62.5em) {
+  .container {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 42.625em) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
+
+.sidebar {
+  background: #0b4d6b;
+}
+
+.content > * {
+  padding: 2rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+}
+
+.footer__list {
+  list-style: none;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+.footer__item {
+  cursor: pointer;
+}
+.footer__link:link, .footer__link:visited {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #848c90;
+  transition: all 0.2s;
+}
+.footer__link:hover, .footer__link:active {
+  background-color: rgba(132, 140, 144, 0.05);
+  transform: translateY(-3px);
+}
+.footer__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #03a9f4;
+  transform: translateY(3px);
+}
+
+.profil {
+  padding: 2rem 0;
+  border-bottom: 2px solid #0e5678;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profil--box-img {
+  width: 20rem;
+  height: 20rem;
+}
+.profil--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profil--paragraph {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact {
+  padding: 2rem 0;
+  border-bottom: 2px solid #0e5678;
+}
+.contact__list {
+  list-style: none;
+}
+.contact__item {
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.contact__link:link, .contact__link:visited {
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: all 0.2s;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.contact__link:hover, .contact__link:active {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+}
+.contact__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #03a9f4;
+  transform: translateY(3px);
+}
+
+.education {
+  padding: 2rem 0;
+  border-bottom: 2px solid #0e5678;
+}
+.education__box {
+  margin-bottom: 2rem;
+}
+.education h4:nth-child(2) {
+  font-weight: 600;
+}
+
+.language {
+  padding-top: 2rem;
+}
+.language__box {
+  padding-bottom: 1rem;
+}
+.language__level {
+  width: 100%;
+  height: 7px;
+  border-radius: 3px;
+  background: #081921;
+  margin-top: 5px;
+  position: relative;
+}
+.language__level--width {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 3px;
+  background: #03a9f4;
+}
+.language__level--width-1 {
+  width: 100%;
+}
+.language__level--width-2 {
+  width: 85%;
+}
+.language__level--width-3 {
+  width: 45%;
+}
+
+.paragraph {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.experiences__box {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+
+.skills {
+  display: grid;
+  row-gap: 1rem;
+  text-transform: uppercase;
+}
+.skills__box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(min-content, 12rem) 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.skills__level {
+  width: 100%;
+  height: 7px;
+  background: #f0f0f0;
+  border-radius: 1rem;
+  position: relative;
+}
+.skills__level--width {
+  display: block;
+  background: #03a9f4;
+  height: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.skills__level--width-1 {
+  width: 95%;
+}
+.skills__level--width-2 {
+  width: 90%;
+}
+.skills__level--width-3 {
+  width: 80%;
+}
+.skills__level--width-4 {
+  width: 85%;
+}/*# sourceMappingURL=main.css.map */
