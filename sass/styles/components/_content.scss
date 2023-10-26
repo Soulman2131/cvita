@@ -1,8 +1,19 @@
 //
 .paragraph {
-  padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #333;
+  margin-bottom: 2rem;
+
+  &__presentation {
+    padding: 0 1rem 2rem;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+  }
+
+  //😍😍😍
+  @media screen and (max-width: $bp-small) {
+    font-size: 1.2rem;
+  }
 }
 
 // PRESENTATION
@@ -16,6 +27,9 @@
 
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     column-gap: 1rem;
+
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+    padding-top: 1rem;
   }
 }
 

@@ -1,12 +1,10 @@
-//
-
 // H2
 .heading-secondary {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 900;
-  margin-top: 2rem;
+  margin: 2rem auto;
   text-align: center;
   &__profil {
     color: $color-white;
@@ -29,6 +27,7 @@
 .heading-quaterny {
   color: $color-white;
   font-weight: 300;
+  letter-spacing: 0.1rem;
   &__skills {
     color: $color-greydark;
     font-weight: 700;
@@ -38,6 +37,10 @@
       font-size: 1rem;
       color: $color-white;
     }
+  }
+  &__experiences {
+    color: green;
+    font-weight: bold;
   }
 }
 
@@ -56,6 +59,9 @@
     &:not(:first-child) {
       text-transform: uppercase;
       color: $color-greydark;
+    }
+    &--1 {
+      margin-top: 0 !important;
     }
   }
 }

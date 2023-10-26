@@ -41,6 +41,12 @@
   &__item {
     cursor: pointer;
     margin: 1rem 0;
+    //😍
+    &--linkedin {
+      display: grid;
+      grid-template-columns: min-content max-content;
+      column-gap: 1rem;
+    }
   }
 
   &__link {
