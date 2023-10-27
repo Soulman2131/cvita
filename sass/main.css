@@ -81,6 +81,7 @@ body {
 .heading-quaterny__education--span {
   font-size: 1rem;
   color: #fff;
+  font-weight: 300;
 }
 .heading-quaterny__experiences {
   color: green;
