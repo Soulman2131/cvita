@@ -78,6 +78,9 @@ body {
   color: #848c90;
   font-weight: 700;
 }
+.heading-quaterny__education {
+  font-size: 1.3rem;
+}
 .heading-quaterny__education--span {
   font-size: 1rem;
   color: #fff;
@@ -283,7 +286,7 @@ body {
 }
 
 .paragraph {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #333;
   margin-bottom: 2rem;
 }
