@@ -111,8 +111,6 @@ body {
 }
 
 .container {
-  max-width: 112rem;
-  margin: 5rem auto;
   width: 100%;
   min-height: 100rem;
   background: #fff;
