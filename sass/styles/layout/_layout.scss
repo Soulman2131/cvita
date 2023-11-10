@@ -1,6 +1,6 @@
 .container {
-  max-width: 112rem;
-  margin: 5rem auto;
+  max-width: 95vw;
+  margin: 1rem auto;
   // width: 100%;
   min-height: 100rem;
   background: $color-white;
@@ -30,8 +30,9 @@
   background: $color-primary;
 }
 
+//😍😘
 .content {
-  & > * {
+  & > *:not(:last-child) {
     padding: 2rem;
     box-shadow: $shadow;
     margin-bottom: 3rem;
